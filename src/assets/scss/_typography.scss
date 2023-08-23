@@ -3,6 +3,7 @@ h1 {
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
   font-weight: bold;
   line-height: 1.3;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 h3 {
@@ -17,6 +19,7 @@ h3 {
   font-weight: bold;
   line-height: 1.4;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 h4 {
@@ -24,6 +27,7 @@ h4 {
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 h5 {
@@ -31,6 +35,7 @@ h5 {
   font-weight: bold;
   line-height: 1.6;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 h6 {
@@ -38,6 +43,7 @@ h6 {
   font-weight: bold;
   line-height: 1.7;
   letter-spacing: 0;
+  font-family: 'Sf Pro Display Medium';
 }
 
 p {
@@ -60,8 +66,4 @@ a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: $lightblue;
   text-decoration: underline;
-}
-
-small {
-  
 }
