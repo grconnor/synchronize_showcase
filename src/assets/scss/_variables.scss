@@ -1,0 +1,10 @@
+@import 'colors';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+// Custom variable overrides
+$primary: #2c82c9;
+$secondary: #61b15a;
+
+// Additional custom variables

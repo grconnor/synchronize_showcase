@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Sf Pro Display Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/SF_Pro_Display_Medium.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sf Pro Display Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/SF_Pro_Display_Regular.OTF') format('opentype');
+}
+
+body {
+  font-family: 'Sf Pro Display Regular';
+  -webkit-font-smoothing: antialiased;
+}
