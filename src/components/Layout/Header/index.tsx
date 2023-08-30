@@ -1,9 +1,11 @@
 import Link from 'next/link';
-import { Add, HambergerMenu } from 'iconsax-react';
 import React, { useState } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Add, HambergerMenu } from 'iconsax-react';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 
 import headerData from '@mocks/headerData';
+import HeaderLogo from '@icons/synchronize_logo.svg';
+import Arrow from '@icons/arrow_up_right.svg';
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,7 +21,9 @@ const Header = () => {
         >
           <div className="header-home">
             <Link href="/" passHref>
-              <Navbar.Brand>{/* Set up svg component import */}</Navbar.Brand>
+              <Navbar.Brand>
+                <HeaderLogo alt="Link to Home Page" height={50} width={315} />
+              </Navbar.Brand>
             </Link>
           </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" aria-expanded="true">
@@ -39,6 +43,14 @@ const Header = () => {
                   </Nav.Link>
                 );
               })}
+              <Nav.Link href="/get-started" className="header-items-cta">
+                <Button className="get-started">
+                  <span className="get-started-content">
+                    Get Started
+                    <Arrow />
+                  </span>
+                </Button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
