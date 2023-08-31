@@ -67,3 +67,26 @@ a:not([href]):not([class]):hover {
   color: $lightblue;
   text-decoration: underline;
 }
+
+.sliding-text {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+
+  &-wrapper {
+    overflow: hidden;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}

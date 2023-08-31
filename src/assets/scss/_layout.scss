@@ -12,14 +12,15 @@ $header-logo-height-sm: 1.8rem;
 }
 
 .header {
-  top: 0;
-  width: 100%;
-  height: $header-height;
   display: flex;
   position: fixed;
   align-items: center;
+  width: 100%;
+  height: $header-height;
   transform: translateY(0);
   transition: transform 0.3s ease;
+  z-index: 9999;
+  top: 0;
 
   .container {
     height: 100%;
@@ -51,6 +52,7 @@ $header-logo-height-sm: 1.8rem;
 
       svg {
         fill: $black;
+        margin-left: 1rem;
       }
 
       &:hover {
@@ -62,11 +64,11 @@ $header-logo-height-sm: 1.8rem;
   }
 
   &-items {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     grid-column-gap: 2rem;
+    width: 100%;
     font-family: 'Sf Pro Display Medium', sans-serif;
 
     .nav-link {
@@ -98,9 +100,9 @@ $header-logo-height-sm: 1.8rem;
   color: $white;
   border-radius: 2.5rem;
   padding: 0.75rem 1.5rem;
+  background-color: #4242f0;
   position: relative;
   overflow: hidden;
-  background-color: #4242f0;
   transition:
     background-color 0.3s,
     transform 0.3s;
@@ -119,9 +121,9 @@ $header-logo-height-sm: 1.8rem;
   }
 
   &:hover {
-    background-color: #3232cc;
     color: $white;
     transform: scale(1.25);
+    background-color: #3232cc;
 
     &::before {
       transform: scale(12);
@@ -147,12 +149,12 @@ $header-logo-height-sm: 1.8rem;
   }
 
   &-content {
-    font-size: 0.89rem;
-    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    font-size: 0.89rem;
+    font-weight: 600;
 
     svg {
       margin-left: 0.5rem;
@@ -173,9 +175,9 @@ $header-logo-height-sm: 1.8rem;
 
   .header-items {
     .nav-link {
+      color: $gray-600;
       text-align: center;
       margin-right: 0;
-      color: $gray-600;
       width: 100%;
 
       &:hover {
